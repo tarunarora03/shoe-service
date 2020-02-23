@@ -14,6 +14,6 @@ public class ShoeTrueSizeDetails {
 	@Id
 	private int id;
 	private int shoeId;
-	private double shoeSize;
-	private int size;
+	private String shoeSize;
+	private int trueSize;
 }

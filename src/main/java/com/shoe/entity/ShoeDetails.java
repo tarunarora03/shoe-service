@@ -15,10 +15,11 @@ public class ShoeDetails {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int Id;
 	private int shoeSubCatId;
 	private int shoeId;
-	private double shoeSize;
-	private double avg;
-	private int count;
+	private String shoeSize;
+	private double trueSizeAvg;
+	private int trueSizeCount;
 
 }
