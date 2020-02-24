@@ -22,4 +22,11 @@ public class ShoeDetails {
 	private double trueSizeAvg;
 	private int trueSizeCount;
 
+	@Override
+	public String toString() {
+		return "ShoeDetails [Id=" + Id + ", shoeSubCatId=" + shoeSubCatId + ", shoeId=" + shoeId + ", shoeSize="
+				+ shoeSize + ", trueSizeAvg=" + trueSizeAvg + ", trueSizeCount=" + trueSizeCount + "]";
+	}
+
+	
 }

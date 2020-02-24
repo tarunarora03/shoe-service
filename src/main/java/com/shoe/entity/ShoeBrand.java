@@ -10,12 +10,17 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name="SHOE_CODE_NAME")
+@Table(name = "SHOE_CODE_NAME")
 public class ShoeBrand {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int shoeId;
 	private String shoeBrandName;
-	
+
+	@Override
+	public String toString() {
+		return "ShoeBrand [shoeId=" + shoeId + ", shoeBrandName=" + shoeBrandName + "]";
+	}
+
 }

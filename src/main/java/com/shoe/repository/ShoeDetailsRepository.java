@@ -8,9 +8,16 @@ import com.shoe.entity.ShoeDetails;
 
 public interface ShoeDetailsRepository extends JpaRepository<ShoeDetails, Integer> {
 
-	@Query("SELECT * FROM SHOE_DETAILS sd WHERE sd.shoeId= :shoeId and s.shoeSize = :shoeSize")
-	ShoeDetails getAvgbyShoe(@Param("shoeId") Integer shoeId, @Param("shoeSize") String shoeSize);
+	//@Query("SELECT * FROM SHOE_DETAILS sd WHERE sd.shoeId= :shoeId and s.shoeSize = :shoeSize")
+	//ShoeDetails getAvgbyShoeIdAndSize(@Param("shoeId") Integer shoeId, @Param("shoeSize") String shoeSize);
+
+	ShoeDetails findByShoeId(Integer shoeId);
 	
-	@Query("Update SHOE_DETAILS sd SET sd.trueSizeAvg= ?1, sd.trueSizeCount=?2 where sd.id=?3")
+	ShoeDetails findByShoeSize(String shoeSize);
+	
+	//@Query("SELECT sd FROM SHOE_DETAILS sd WHERE sd.shoeId= :shoeId and sd.shoeSize = :shoeSize")
+	ShoeDetails findByShoeIdAndShoeSize(Integer shoeId, String shoeSize);
+
+	@Query(value = "Update SHOE_DETAILS sd SET sd.trueSizeAvg= :avg, sd.trueSizeCount=:count where sd.id=:id", nativeQuery = true)
 	void setAvgInfoById(double avg, Integer count, Integer id);
 }

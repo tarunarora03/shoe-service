@@ -16,4 +16,11 @@ public class ShoeTrueSizeDetails {
 	private int shoeId;
 	private String shoeSize;
 	private int trueSize;
+
+	@Override
+	public String toString() {
+		return "ShoeTrueSizeDetails [id=" + id + ", shoeId=" + shoeId + ", shoeSize=" + shoeSize + ", trueSize="
+				+ trueSize + "]";
+	}
+
 }
