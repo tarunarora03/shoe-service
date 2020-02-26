@@ -17,7 +17,7 @@ public class AppConfig {
 
 	@Bean
 	public Docket api() {
-		return new Docket(DocumentationType.SWAGGER_2).select().apis(RequestHandlerSelectors.any())
+		return new Docket(DocumentationType.SWAGGER_2).select().apis(RequestHandlerSelectors.basePackage("com.shoe"))
 				.paths(PathSelectors.any()).build().apiInfo(apiEndPointsInfo());
 	}
 

@@ -15,12 +15,12 @@ public class ShoeBrand {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int shoeId;
+	private int shoeBrandId;
 	private String shoeBrandName;
 
 	@Override
 	public String toString() {
-		return "ShoeBrand [shoeId=" + shoeId + ", shoeBrandName=" + shoeBrandName + "]";
+		return "ShoeBrand [shoeId=" + shoeBrandId + ", shoeBrandName=" + shoeBrandName + "]";
 	}
 
 }

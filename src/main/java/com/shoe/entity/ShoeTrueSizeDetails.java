@@ -1,6 +1,8 @@
 package com.shoe.entity;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -12,14 +14,15 @@ import lombok.Data;
 public class ShoeTrueSizeDetails {
 
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	private int shoeId;
+	private int shoeBrandId;
 	private String shoeSize;
 	private int trueSize;
 
 	@Override
 	public String toString() {
-		return "ShoeTrueSizeDetails [id=" + id + ", shoeId=" + shoeId + ", shoeSize=" + shoeSize + ", trueSize="
+		return "ShoeTrueSizeDetails [id=" + id + ", shoeBrandId=" + shoeBrandId + ", shoeSize=" + shoeSize + ", trueSize="
 				+ trueSize + "]";
 	}
 

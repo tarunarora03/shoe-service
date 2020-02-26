@@ -13,13 +13,13 @@ public class ShoeSubCategraoryDtls {
 
 	@Id
 	private int shoeSubCatId;
-	private int shoeId;
+	private int shoeBrandId;
 	private String shoeType;
 	private String shoeName;
 
 	@Override
 	public String toString() {
-		return "ShoeSubCategraoryDtls [shoeSubCatId=" + shoeSubCatId + ", shoeId=" + shoeId + ", shoeType=" + shoeType
+		return "ShoeSubCategraoryDtls [shoeSubCatId=" + shoeSubCatId + ", shoeBrandId=" + shoeBrandId + ", shoeType=" + shoeType
 				+ ", shoeName=" + shoeName + "]";
 	}
 

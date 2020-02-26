@@ -17,14 +17,14 @@ public class ShoeDetails {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int Id;
 	private int shoeSubCatId;
-	private int shoeId;
+	private int shoeBrandId;
 	private String shoeSize;
 	private double trueSizeAvg;
 	private int trueSizeCount;
 
 	@Override
 	public String toString() {
-		return "ShoeDetails [Id=" + Id + ", shoeSubCatId=" + shoeSubCatId + ", shoeId=" + shoeId + ", shoeSize="
+		return "ShoeDetails [Id=" + Id + ", shoeSubCatId=" + shoeSubCatId + ", shoeBrandId=" + shoeBrandId + ", shoeSize="
 				+ shoeSize + ", trueSizeAvg=" + trueSizeAvg + ", trueSizeCount=" + trueSizeCount + "]";
 	}
 
