@@ -1,5 +1,6 @@
 package com.shoe.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -15,10 +16,16 @@ public class ShoeTrueSizeDetails {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
-	private int shoeBrandId;
+	private Integer id;
+
+	@Column(name="shoe_brand_id")
+	private Integer shoeBrandId;
+
+	@Column(name="shoe_size")
 	private String shoeSize;
-	private int trueSize;
+
+	@Column(name="true_size")
+	private Integer trueSize;
 
 	@Override
 	public String toString() {

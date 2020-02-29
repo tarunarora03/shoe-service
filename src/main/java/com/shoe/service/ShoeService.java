@@ -34,16 +34,24 @@ public class ShoeService {
 
 	// Add new Shoe Brands
 	public ShoeResponse addShoeBrand(ShoeDto dto) {
+		
+		// check if shoe by this name exists or not
+		ShoeBrand brand2 =shoeBrandRepository.findByShoeBrandName(dto.getShoeBrandName());
+		if(brand2 !=null) {
+			throw new IllegalArgumentException("Brand already exists. Please enter a different brand name. BrandName:" +dto.getShoeBrandName());
+		}
+
 		ShoeBrand brand = new ShoeBrand();
 		brand.setShoeBrandName(dto.getShoeBrandName());
+		
 
-		int brandId = shoeBrandRepository.saveAndFlush(brand).getShoeBrandId();
+		int brandId = shoeBrandRepository.saveAndFlush(brand).getId();
 		ShoeResponse resp = new ShoeResponse();
 		resp.setBrandId(brandId);
 		resp.setBrandName(dto.getShoeBrandName());
-		resp.setStatus("Record added successfully.");
+		resp.setStatus("New Brand Record added successfully." + brandId);
 
-		logger.info("New shoe brand added succesfully. brandName:{}",dto.getShoeBrandName());
+		logger.info("New shoe brand added succesfully. brandName:{}", dto.getShoeBrandName());
 		return resp;
 	}
 
@@ -53,19 +61,18 @@ public class ShoeService {
 		logger.info("In method get Available brands.");
 		List<ShoeBrand> shoeBrands = shoeBrandRepository.findAll();
 
-		logger.info("ShoeBrands: " + shoeBrands);
-		if (shoeBrands.size() != 0) {
-			List<ShoeResponse> shoeResponseList = shoeBrands.stream().map(brands -> {
-				ShoeResponse dto = new ShoeResponse();
-				dto.setBrandId(brands.getShoeBrandId());
-				dto.setBrandName(brands.getShoeBrandName());
-				return dto;
-			}).collect(Collectors.toList());
-
-			return shoeResponseList;
-		} else {
+		if (shoeBrands.size() == 0) {
 			throw new RecordNotFoundException("No Brands exists. Please add some brands first", "");
 		}
+		logger.info("ShoeBrands: " + shoeBrands);
+		List<ShoeResponse> shoeResponseList = shoeBrands.stream().map(brands -> {
+			ShoeResponse dto = new ShoeResponse();
+			dto.setBrandId(brands.getId());
+			dto.setBrandName(brands.getShoeBrandName());
+			return dto;
+		}).collect(Collectors.toList());
+
+		return shoeResponseList;
 	}
 
 	@Transactional
@@ -78,48 +85,48 @@ public class ShoeService {
 		// get the Shoe ID
 		ShoeBrand shoeBrand = getShoeIdFromBrand(dto);
 
-		if (shoeBrand != null) {
-			// add the new data into the truesize table
-			trueSizeDetails.setShoeBrandId(shoeBrand.getShoeBrandId());
-			trueSizeDetails.setShoeSize(dto.getShoeSize());
-			trueSizeDetails.setTrueSize(trueSize);
-			
-			logger.info("Inserting records for {} in the trueSizetable", shoeBrand.getShoeBrandId());
-			logger.debug("trueSizeDetails:"+trueSizeDetails.toString());
-			
-			trueSizeRepository.saveAndFlush(trueSizeDetails);
-			logger.info("Record inserted successfully in the table");
-			
-			// get the exiting avg for that shoe and size
-			shoeDetails = shoeDetailsRepository.findByShoeBrandIdAndShoeSize(shoeBrand.getShoeBrandId(),
-					dto.getShoeSize());
-
-			if (shoeDetails != null) {
-				logger.debug("ShoeDetails:" + shoeDetails.toString());
-
-				double exitingAvg = shoeDetails.getTrueSizeAvg();
-				double newAvg = ((exitingAvg * shoeDetails.getTrueSizeCount()) + trueSizeDetails.getTrueSize())
-						/ (shoeDetails.getTrueSizeCount() + 1);
-
-				shoeDetailsRepository.setAvgInfoById(newAvg, shoeDetails.getTrueSizeCount() + 1, shoeDetails.getId());
-				logger.debug("Updated avg in the shoedetails table. new Avg is {}", newAvg);
-			} else {
-				ShoeDetails details = new ShoeDetails();
-
-				details.setShoeBrandId(shoeBrand.getShoeBrandId());
-				details.setShoeSize(dto.getShoeSize());
-				details.setShoeSubCatId(1);
-				details.setTrueSizeAvg(trueSize);
-				details.setTrueSizeCount(1);
-
-				shoeDetailsRepository.save(details);
-			}
-			resp.setStatus("Record added succesfully and avg were updated.");
-		} else {
+		if (shoeBrand == null) {
 			logger.error("The requested shoe brand doesnt exists.");
 			throw new RecordNotFoundException("No Brand exists for the given Name in the request",
 					dto.getShoeBrandName());
 		}
+		// add the new data into the truesize table
+		trueSizeDetails.setShoeBrandId(shoeBrand.getId());
+		trueSizeDetails.setShoeSize(dto.getShoeSize());
+		trueSizeDetails.setTrueSize(trueSize);
+
+		logger.info("Inserting records for Brand {} in the trueSizetable", shoeBrand.getShoeBrandName());
+		logger.debug("trueSizeDetails:" + trueSizeDetails.toString());
+
+		trueSizeRepository.saveAndFlush(trueSizeDetails);
+		logger.info("Record inserted successfully in the True Size table ");
+
+		// get the exiting avg for that shoe and size
+		shoeDetails = shoeDetailsRepository.findByShoeBrandIdAndShoeSize(shoeBrand.getId(), dto.getShoeSize());
+
+		if (shoeDetails != null) {
+			logger.debug("ShoeDetails:" + shoeDetails.toString());
+
+			double exitingAvg = shoeDetails.getTrueSizeAvg();
+			double newAvg = ((exitingAvg * shoeDetails.getTrueSizeCount()) + trueSizeDetails.getTrueSize())
+					/ (shoeDetails.getTrueSizeCount() + 1);
+
+			shoeDetailsRepository.setAvgInfoById(newAvg, shoeDetails.getTrueSizeCount() + 1, shoeDetails.getId());
+			logger.debug("Updated avg in the shoedetails table. new Avg is {}", newAvg);
+		} else {
+			ShoeDetails details = new ShoeDetails();
+
+			details.setShoeBrandId(shoeBrand.getId());
+			details.setShoeSize(dto.getShoeSize());
+			details.setShoeSubCatId(1);
+			details.setTrueSizeAvg(trueSize);
+			details.setTrueSizeCount(1);
+			
+			System.out.println("sssssssssssss"+ details.getTrueSizeAvg());
+
+			shoeDetailsRepository.save(details);
+		}
+		resp.setStatus("Record added succesfully and avg were updated.");
 
 		return resp;
 	}
@@ -129,30 +136,31 @@ public class ShoeService {
 		// get the Shoe ID
 		ShoeBrand shoeBrand = getShoeIdFromBrand(dto);
 
-		if (shoeBrand != null) {
-			logger.debug("ShoeBrand:" +shoeBrand.toString());
-			ShoeDetails shoeDetails = shoeDetailsRepository.findByShoeBrandIdAndShoeSize(shoeBrand.getShoeBrandId(),
-					dto.getShoeSize());
-			if (shoeDetails != null) {
-				logger.debug("ShoeDetails:" + shoeDetails.toString());
-
-				ShoeResponse dtoResponse = new ShoeResponse();
-				dtoResponse.setAvgTrueSize(shoeDetails.getTrueSizeAvg());
-				dtoResponse.setBrandId(shoeDetails.getShoeBrandId());
-				dtoResponse.setBrandName(dto.getShoeBrandName());
-				dtoResponse.setShoeSize(dto.getShoeSize());
-				return dtoResponse;
-			} else {
-				logger.error("The requested shoe details doesnt exists.");
-				throw new RecordNotFoundException("No shoe size exists for the given brand Name in the request",
-						dto.getShoeBrandName() + "|" + dto.getShoeSize());
-			}
-		} else {
+		if (shoeBrand == null) {
 			logger.error("The requested shoe brand doesnt exists.");
 			throw new RecordNotFoundException("No Brand exists for the given Name in the request",
 					dto.getShoeBrandName());
+
 		}
 
+		logger.debug("ShoeBrand:" + shoeBrand.toString());
+		ShoeDetails shoeDetails = shoeDetailsRepository.findByShoeBrandIdAndShoeSize(shoeBrand.getId(),
+				dto.getShoeSize());
+
+		if (shoeDetails == null) {
+			logger.error("The requested shoe details doesnt exists.");
+			throw new RecordNotFoundException("No shoe size exists for the given brand Name in the request",
+					dto.getShoeBrandName() + "|" + dto.getShoeSize());
+
+		}
+		logger.debug("ShoeDetails:" + shoeDetails.toString());
+
+		ShoeResponse dtoResponse = new ShoeResponse();
+		dtoResponse.setAvgTrueSize(shoeDetails.getTrueSizeAvg());
+		dtoResponse.setBrandId(shoeDetails.getId());
+		dtoResponse.setBrandName(dto.getShoeBrandName());
+		dtoResponse.setShoeSize(dto.getShoeSize());
+		return dtoResponse;
 	}
 
 	// Add new shoe subcategory for later
@@ -161,7 +169,7 @@ public class ShoeService {
 		// get the Shoe ID
 		ShoeBrand shoeBrand = getShoeIdFromBrand(dto);
 
-		subCategraoryDtls.setShoeBrandId(shoeBrand.getShoeBrandId());
+		subCategraoryDtls.setShoeBrandId(shoeBrand.getId());
 		subCategraoryDtls.setShoeName(dto.getShoeName());
 		subCategraoryDtls.setShoeType(dto.getShoeType());
 	}
@@ -181,7 +189,7 @@ public class ShoeService {
 		ShoeDetails details = new ShoeDetails();
 
 		ShoeBrand shoeBrand = getShoeIdFromBrand(dto);
-		details.setShoeBrandId(shoeBrand.getShoeBrandId());
+		details.setShoeBrandId(shoeBrand.getId());
 		details.setShoeSize(dto.getShoeSize());
 		details.setShoeSubCatId(1);
 		details.setTrueSizeAvg(0);

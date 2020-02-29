@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -55,9 +56,9 @@ public class ShoeController {
 		return shoeService.addNewTrueSize(dto, Integer.parseInt(trueSize));
 	}
 
-	@ApiOperation(value = "add new brands to list of existing brands ", response = Iterable.class)
+	@ApiOperation(value = "add new brands to list of existing brands ", response = ShoeResponse.class)
 	@PostMapping("/addBrand")
-	public ShoeResponse addShoeBrand(ShoeDto dto) {
+	public ShoeResponse addShoeBrand(@RequestBody ShoeDto dto) {
 
 		logger.info("adding a new shoe brand {}",dto.getShoeBrandName());
 		return shoeService.addShoeBrand(dto);

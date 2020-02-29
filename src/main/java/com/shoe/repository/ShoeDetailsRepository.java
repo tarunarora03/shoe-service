@@ -15,6 +15,6 @@ public interface ShoeDetailsRepository extends JpaRepository<ShoeDetails, Intege
 	ShoeDetails findByShoeBrandIdAndShoeSize(Integer shoeId, String shoeSize);
 
 	@Modifying
-	@Query(value = "Update SHOE_DETAILS sd SET sd.TRUE_SIZE_AVG = :avg, sd. TRUE_SIZE_COUNT =:count where sd.id=:id", nativeQuery = true)
+	@Query(value = "Update SHOE_DETAILS SET TRUE_SIZE_AVG = :avg, TRUE_SIZE_COUNT =:count where id=:id", nativeQuery = true)
 	void setAvgInfoById(double avg, Integer count, Integer id);
 }

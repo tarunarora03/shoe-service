@@ -1,23 +1,6 @@
 spring:
-    jpa:
-       database-platform: org.hibernate.dialect.H2Dialect
-       hibernate:
-            ddl-auto: update
-       properties:
-            hibernate:
-                format_sql: true
-                generate_statistics: false
-       show-sql: true   
-    h2:
-       console:
-            enabled: true
-            path: /h2-console 
-    datasource:
-       url: jdbc:h2:mem:inventory
-       username: sa
-       password: sa
-       driver-class-name: org.h2.Driver
-       initialization-mode: always
+  application:
+    name: shoe-service
        
 logging:
     pattern:
