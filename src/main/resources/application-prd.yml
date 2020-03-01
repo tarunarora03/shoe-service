@@ -2,7 +2,10 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/asset_management_db
     username: postgres
-    password: secret   
+    password: secret
+    initialization-mode: always
+    schema:
+        - classpath:/schema-postgres.sql
  
   jpa:
     hibernate:
