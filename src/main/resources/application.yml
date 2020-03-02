@@ -1,7 +1,9 @@
 spring:
   application:
     name: shoe-service
-       
+  profiles:
+    active:
+    - '@active_profile@'         
 logging:
     pattern:
         console: '%d{yyyy-MM-dd HH:mm:ss} - %msg%n'
