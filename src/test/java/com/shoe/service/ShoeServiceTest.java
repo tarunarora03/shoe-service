@@ -24,8 +24,15 @@ public class ShoeServiceTest {
 
 		// Fetch the brand
 		List<ShoeResponse> list = service.getAvailableBrands();
-		Assertions.assertEquals(1, list.size());
-		Assertions.assertEquals("nike", list.get(0).getBrandName());
+		Assertions.assertEquals(3, list.size());
+		
+		String tempName="";
+		for (ShoeResponse shoeResponse : list) {
+			if(brandName.equalsIgnoreCase(shoeResponse.getBrandName())) {
+				tempName = shoeResponse.getBrandName();
+			}
+		}
+		Assertions.assertEquals(brandName, tempName);
 	}
 
 	@Test
