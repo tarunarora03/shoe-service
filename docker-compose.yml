@@ -3,7 +3,7 @@ services:
   app:
     image: app
     ports:
-    - "8088:8080"
+    - "8080:8080"
     depends_on:
     - mypostgres
   mypostgres:
