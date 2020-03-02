@@ -18,8 +18,9 @@ public class ShoeServiceTest {
 
 	@Test
 	public void testAddBrands() {
-		ShoeDto dto = addShoeBrandData("nike");
-		service.addShoeBrand(dto);
+		//ShoeDto dto = addShoeBrandData("nike");
+		String brandName = "nike";
+		service.addShoeBrand(brandName);
 
 		// Fetch the brand
 		List<ShoeResponse> list = service.getAvailableBrands();
@@ -30,10 +31,12 @@ public class ShoeServiceTest {
 	@Test
 	public void testGetAvg() {
 		//1.0 Register brand
-		ShoeDto dto = addShoeBrandData("adidas");
-		service.addShoeBrand(dto);
+		String brandName = "adidas";
+		
+		service.addShoeBrand(brandName);
 		
 		//2.0 add details and calculate avg
+		ShoeDto dto = addShoeBrandData(brandName);
 		dto.setShoeSize("9");
 		service.addNewTrueSize(dto, 2);
 		

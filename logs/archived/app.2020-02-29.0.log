@@ -1,0 +1,415 @@
+2020-02-29 11:56:06,612 INFO com.shoe.ShoeServiceApplication [main] Starting ShoeServiceApplication on DESKTOP-8BEIF3B with PID 17976 (D:\Software\SpringWorkspace\shoe-service\target\classes started by tarun in D:\Software\SpringWorkspace\shoe-service)
+2020-02-29 11:56:06,615 DEBUG com.shoe.ShoeServiceApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-29 11:56:06,616 INFO com.shoe.ShoeServiceApplication [main] No active profile set, falling back to default profiles: default
+2020-02-29 11:56:11,569 INFO com.shoe.ShoeServiceApplication [main] Started ShoeServiceApplication in 5.335 seconds (JVM running for 6.557)
+2020-02-29 11:57:25,025 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-10] adding a new shoe brand nike
+2020-02-29 11:57:25,186 INFO com.shoe.service.ShoeService [http-nio-8080-exec-10] New shoe brand added succesfully. brandName:nike
+2020-02-29 11:58:36,883 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-7] adding a new shoe brand null
+2020-02-29 11:58:36,891 INFO com.shoe.service.ShoeService [http-nio-8080-exec-7] New shoe brand added succesfully. brandName:null
+2020-02-29 11:59:35,400 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-1] adding a new shoe brand nike
+2020-02-29 11:59:54,995 INFO com.shoe.service.ShoeService [http-nio-8080-exec-6] In method get Available brands.
+2020-02-29 11:59:55,014 INFO com.shoe.service.ShoeService [http-nio-8080-exec-6] ShoeBrands: [ShoeBrand [shoeId=1, shoeBrandName=nike], ShoeBrand [shoeId=2, shoeBrandName=null]]
+2020-02-29 12:00:44,876 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-4] adding a new shoe brand adidas
+2020-02-29 12:00:44,879 INFO com.shoe.service.ShoeService [http-nio-8080-exec-4] New shoe brand added succesfully. brandName:adidas
+2020-02-29 12:02:17,683 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-7] adding a new shoe brand null
+2020-02-29 12:02:26,472 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-8] adding a new shoe brand null
+2020-02-29 12:02:37,033 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-6] adding a new shoe brand null
+2020-02-29 12:02:38,859 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-9] adding a new shoe brand null
+2020-02-29 12:03:36,532 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-10] adding a new shoe brand null
+2020-02-29 12:03:37,689 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-1] adding a new shoe brand null
+2020-02-29 12:04:07,976 INFO com.shoe.ShoeServiceApplication [main] Starting ShoeServiceApplication on DESKTOP-8BEIF3B with PID 15368 (D:\Software\SpringWorkspace\shoe-service\target\classes started by tarun in D:\Software\SpringWorkspace\shoe-service)
+2020-02-29 12:04:07,978 DEBUG com.shoe.ShoeServiceApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-29 12:04:07,979 INFO com.shoe.ShoeServiceApplication [main] No active profile set, falling back to default profiles: default
+2020-02-29 12:04:11,863 INFO com.shoe.ShoeServiceApplication [main] Started ShoeServiceApplication in 4.161 seconds (JVM running for 5.156)
+2020-02-29 12:04:17,063 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-1] adding a new shoe brand null
+2020-02-29 12:04:17,195 INFO com.shoe.service.ShoeService [http-nio-8080-exec-1] New shoe brand added succesfully. brandName:null
+2020-02-29 12:05:28,066 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-5] adding a new shoe brand null
+2020-02-29 12:07:50,100 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-3] adding a new shoe brand null
+2020-02-29 12:07:52,199 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-5] adding a new shoe brand null
+2020-02-29 12:07:59,305 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-6] adding a new shoe brand null
+2020-02-29 12:08:37,001 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-10] adding a new shoe brand null
+2020-02-29 12:09:10,347 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-3] adding a new shoe brand null
+2020-02-29 12:09:11,665 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-5] adding a new shoe brand null
+2020-02-29 12:09:12,174 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-6] adding a new shoe brand null
+2020-02-29 12:09:41,417 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-10] adding a new shoe brand null
+2020-02-29 12:09:42,571 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-3] adding a new shoe brand null
+2020-02-29 12:09:46,591 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-5] adding a new shoe brand null
+2020-02-29 12:10:03,620 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-6] adding a new shoe brand null
+2020-02-29 12:11:58,446 INFO com.shoe.ShoeServiceApplication [main] Starting ShoeServiceApplication on DESKTOP-8BEIF3B with PID 9520 (D:\Software\SpringWorkspace\shoe-service\target\classes started by tarun in D:\Software\SpringWorkspace\shoe-service)
+2020-02-29 12:11:58,448 DEBUG com.shoe.ShoeServiceApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-29 12:11:58,449 INFO com.shoe.ShoeServiceApplication [main] No active profile set, falling back to default profiles: default
+2020-02-29 12:12:02,295 INFO com.shoe.ShoeServiceApplication [main] Started ShoeServiceApplication in 4.138 seconds (JVM running for 5.104)
+2020-02-29 12:12:20,308 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-2] adding a new shoe brand null
+2020-02-29 12:12:20,445 INFO com.shoe.service.ShoeService [http-nio-8080-exec-2] New shoe brand added succesfully. brandName:null
+2020-02-29 12:13:02,989 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-3] adding a new shoe brand adidas
+2020-02-29 12:13:03,003 INFO com.shoe.service.ShoeService [http-nio-8080-exec-3] New shoe brand added succesfully. brandName:adidas
+2020-02-29 12:13:34,809 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-6] adding a new shoe brand adidas
+2020-02-29 12:13:50,475 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-7] adding a new shoe brand adidas
+2020-02-29 12:14:55,604 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-9] adding a new shoe brand null
+2020-02-29 12:15:15,916 INFO com.shoe.ShoeServiceApplication [main] Starting ShoeServiceApplication on DESKTOP-8BEIF3B with PID 21688 (D:\Software\SpringWorkspace\shoe-service\target\classes started by tarun in D:\Software\SpringWorkspace\shoe-service)
+2020-02-29 12:15:15,918 DEBUG com.shoe.ShoeServiceApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-29 12:15:15,919 INFO com.shoe.ShoeServiceApplication [main] No active profile set, falling back to default profiles: default
+2020-02-29 12:15:20,236 INFO com.shoe.ShoeServiceApplication [main] Started ShoeServiceApplication in 4.596 seconds (JVM running for 5.556)
+2020-02-29 12:15:22,022 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-1] adding a new shoe brand you
+2020-02-29 12:15:22,192 INFO com.shoe.service.ShoeService [http-nio-8080-exec-1] New shoe brand added succesfully. brandName:you
+2020-02-29 12:15:25,498 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-3] adding a new shoe brand you
+2020-02-29 12:36:21,133 INFO com.shoe.ShoeServiceApplication [main] Starting ShoeServiceApplication on DESKTOP-8BEIF3B with PID 19264 (D:\Software\SpringWorkspace\shoe-service\target\classes started by tarun in D:\Software\SpringWorkspace\shoe-service)
+2020-02-29 12:36:21,137 DEBUG com.shoe.ShoeServiceApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-29 12:36:21,138 INFO com.shoe.ShoeServiceApplication [main] No active profile set, falling back to default profiles: default
+2020-02-29 12:36:25,553 INFO com.shoe.ShoeServiceApplication [main] Started ShoeServiceApplication in 4.724 seconds (JVM running for 5.887)
+2020-02-29 13:09:05,205 INFO com.shoe.ShoeServiceApplication [main] Starting ShoeServiceApplication on DESKTOP-8BEIF3B with PID 23124 (D:\Software\SpringWorkspace\shoe-service\target\classes started by tarun in D:\Software\SpringWorkspace\shoe-service)
+2020-02-29 13:09:05,207 DEBUG com.shoe.ShoeServiceApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-29 13:09:05,207 INFO com.shoe.ShoeServiceApplication [main] No active profile set, falling back to default profiles: default
+2020-02-29 13:09:09,373 INFO com.shoe.ShoeServiceApplication [main] Started ShoeServiceApplication in 4.476 seconds (JVM running for 5.507)
+2020-02-29 13:10:29,773 INFO com.shoe.ShoeServiceApplication [main] Starting ShoeServiceApplication on DESKTOP-8BEIF3B with PID 15432 (D:\Software\SpringWorkspace\shoe-service\target\classes started by tarun in D:\Software\SpringWorkspace\shoe-service)
+2020-02-29 13:10:29,775 DEBUG com.shoe.ShoeServiceApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-29 13:10:29,775 INFO com.shoe.ShoeServiceApplication [main] The following profiles are active: dev
+2020-02-29 13:10:33,865 INFO com.shoe.ShoeServiceApplication [main] Started ShoeServiceApplication in 4.372 seconds (JVM running for 5.389)
+2020-02-29 13:11:04,123 INFO com.shoe.ShoeServiceApplication [main] Starting ShoeServiceApplication on DESKTOP-8BEIF3B with PID 19136 (D:\Software\SpringWorkspace\shoe-service\target\classes started by tarun in D:\Software\SpringWorkspace\shoe-service)
+2020-02-29 13:11:04,125 DEBUG com.shoe.ShoeServiceApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-29 13:11:04,125 INFO com.shoe.ShoeServiceApplication [main] The following profiles are active: prd
+2020-02-29 13:11:07,381 ERROR com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Exception during pool initialization.
+org.postgresql.util.PSQLException: FATAL: password authentication failed for user "tarun"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:520)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:141)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:211)
+	at org.postgresql.Driver.makeConnection(Driver.java:458)
+	at org.postgresql.Driver.connect(Driver.java:260)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:121)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:354)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:473)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:554)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:175)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:118)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1202)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1233)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1108)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.shoe.ShoeServiceApplication.main(ShoeServiceApplication.java:10)
+2020-02-29 13:11:09,432 INFO com.shoe.ShoeServiceApplication [main] Started ShoeServiceApplication in 5.601 seconds (JVM running for 6.658)
+2020-02-29 13:11:39,181 INFO com.shoe.ShoeServiceApplication [main] Starting ShoeServiceApplication on DESKTOP-8BEIF3B with PID 16736 (D:\Software\SpringWorkspace\shoe-service\target\classes started by tarun in D:\Software\SpringWorkspace\shoe-service)
+2020-02-29 13:11:39,184 DEBUG com.shoe.ShoeServiceApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-29 13:11:39,184 INFO com.shoe.ShoeServiceApplication [main] The following profiles are active: prd
+2020-02-29 13:11:42,373 ERROR com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Exception during pool initialization.
+org.postgresql.util.PSQLException: FATAL: password authentication failed for user "tarun"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:520)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:141)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:211)
+	at org.postgresql.Driver.makeConnection(Driver.java:458)
+	at org.postgresql.Driver.connect(Driver.java:260)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:354)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:473)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:554)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:175)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:118)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1202)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1233)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1108)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.shoe.ShoeServiceApplication.main(ShoeServiceApplication.java:10)
+2020-02-29 13:11:44,437 INFO com.shoe.ShoeServiceApplication [main] Started ShoeServiceApplication in 5.548 seconds (JVM running for 6.621)
+2020-02-29 13:14:19,512 INFO com.shoe.ShoeServiceApplication [main] Starting ShoeServiceApplication on DESKTOP-8BEIF3B with PID 21840 (D:\Software\SpringWorkspace\shoe-service\target\classes started by tarun in D:\Software\SpringWorkspace\shoe-service)
+2020-02-29 13:14:19,514 DEBUG com.shoe.ShoeServiceApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-29 13:14:19,515 INFO com.shoe.ShoeServiceApplication [main] The following profiles are active: prd
+2020-02-29 13:14:24,303 INFO com.shoe.ShoeServiceApplication [main] Started ShoeServiceApplication in 5.079 seconds (JVM running for 6.095)
+2020-02-29 13:14:49,237 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-2] adding a new shoe brand nike
+2020-02-29 13:14:49,345 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] ERROR: column shoebrand0_.shoe_brand_id does not exist
+  Hint: Perhaps you meant to reference the column "shoebrand0_.shoebrandid".
+  Position: 8
+2020-02-29 13:36:29,841 INFO com.shoe.ShoeServiceApplication [main] Starting ShoeServiceApplication on DESKTOP-8BEIF3B with PID 5136 (D:\Software\SpringWorkspace\shoe-service\target\classes started by tarun in D:\Software\SpringWorkspace\shoe-service)
+2020-02-29 13:36:29,844 DEBUG com.shoe.ShoeServiceApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-29 13:36:29,844 INFO com.shoe.ShoeServiceApplication [main] The following profiles are active: prd
+2020-02-29 13:36:36,101 INFO com.shoe.ShoeServiceApplication [main] Started ShoeServiceApplication in 6.632 seconds (JVM running for 7.737)
+2020-02-29 13:36:39,738 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-1] adding a new shoe brand nike
+2020-02-29 13:36:39,891 INFO com.shoe.service.ShoeService [http-nio-8080-exec-1] New shoe brand added succesfully. brandName:nike
+2020-02-29 13:37:32,374 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-3] adding a new shoe brand adidas
+2020-02-29 13:37:32,403 INFO com.shoe.service.ShoeService [http-nio-8080-exec-3] New shoe brand added succesfully. brandName:adidas
+2020-02-29 13:39:16,607 INFO com.shoe.service.ShoeService [http-nio-8080-exec-6] In method get Available brands.
+2020-02-29 13:39:16,628 INFO com.shoe.service.ShoeService [http-nio-8080-exec-6] ShoeBrands: [null, null]
+2020-02-29 13:41:19,406 INFO com.shoe.ShoeServiceApplication [main] Starting ShoeServiceApplication on DESKTOP-8BEIF3B with PID 22532 (D:\Software\SpringWorkspace\shoe-service\target\classes started by tarun in D:\Software\SpringWorkspace\shoe-service)
+2020-02-29 13:41:19,409 DEBUG com.shoe.ShoeServiceApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-29 13:41:19,409 INFO com.shoe.ShoeServiceApplication [main] The following profiles are active: prd
+2020-02-29 13:41:24,956 INFO com.shoe.ShoeServiceApplication [main] Started ShoeServiceApplication in 6.01 seconds (JVM running for 7.206)
+2020-02-29 13:41:37,597 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-2] adding a new shoe brand adidas
+2020-02-29 13:41:37,751 INFO com.shoe.service.ShoeService [http-nio-8080-exec-2] New shoe brand added succesfully. brandName:adidas
+2020-02-29 13:41:47,233 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-3] adding a new shoe brand nike
+2020-02-29 13:41:47,237 INFO com.shoe.service.ShoeService [http-nio-8080-exec-3] New shoe brand added succesfully. brandName:nike
+2020-02-29 13:45:17,517 INFO com.shoe.ShoeServiceApplication [main] Starting ShoeServiceApplication on DESKTOP-8BEIF3B with PID 23116 (D:\Software\SpringWorkspace\shoe-service\target\classes started by tarun in D:\Software\SpringWorkspace\shoe-service)
+2020-02-29 13:45:17,519 DEBUG com.shoe.ShoeServiceApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-29 13:45:17,520 INFO com.shoe.ShoeServiceApplication [main] The following profiles are active: prd
+2020-02-29 13:45:22,455 INFO com.shoe.ShoeServiceApplication [main] Started ShoeServiceApplication in 5.305 seconds (JVM running for 6.486)
+2020-02-29 13:45:26,912 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-2] adding a new shoe brand nike
+2020-02-29 13:45:27,199 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] ERROR: relation "hibernate_sequence" does not exist
+  Position: 17
+2020-02-29 13:46:28,524 INFO com.shoe.ShoeServiceApplication [main] Starting ShoeServiceApplication on DESKTOP-8BEIF3B with PID 21540 (D:\Software\SpringWorkspace\shoe-service\target\classes started by tarun in D:\Software\SpringWorkspace\shoe-service)
+2020-02-29 13:46:28,526 DEBUG com.shoe.ShoeServiceApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-29 13:46:28,526 INFO com.shoe.ShoeServiceApplication [main] The following profiles are active: prd
+2020-02-29 13:46:33,494 INFO com.shoe.ShoeServiceApplication [main] Started ShoeServiceApplication in 5.261 seconds (JVM running for 6.341)
+2020-02-29 13:47:07,822 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-1] adding a new shoe brand nike
+2020-02-29 13:47:07,964 INFO com.shoe.service.ShoeService [http-nio-8080-exec-1] New shoe brand added succesfully. brandName:nike
+2020-02-29 13:47:10,564 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-3] adding a new shoe brand nike
+2020-02-29 13:47:10,569 INFO com.shoe.service.ShoeService [http-nio-8080-exec-3] New shoe brand added succesfully. brandName:nike
+2020-02-29 13:51:29,771 INFO com.shoe.ShoeServiceApplication [main] Starting ShoeServiceApplication on DESKTOP-8BEIF3B with PID 23528 (D:\Software\SpringWorkspace\shoe-service\target\classes started by tarun in D:\Software\SpringWorkspace\shoe-service)
+2020-02-29 13:51:29,774 DEBUG com.shoe.ShoeServiceApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-29 13:51:29,774 INFO com.shoe.ShoeServiceApplication [main] The following profiles are active: prd
+2020-02-29 13:51:34,373 INFO com.shoe.ShoeServiceApplication [main] Started ShoeServiceApplication in 4.903 seconds (JVM running for 6.014)
+2020-02-29 13:51:40,489 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-2] adding a new shoe brand nike
+2020-02-29 13:51:40,651 INFO com.shoe.service.ShoeService [http-nio-8080-exec-2] New shoe brand added succesfully. brandName:nike
+2020-02-29 13:51:44,541 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-3] adding a new shoe brand nike
+2020-02-29 13:51:44,546 INFO com.shoe.service.ShoeService [http-nio-8080-exec-3] New shoe brand added succesfully. brandName:nike
+2020-02-29 13:51:45,597 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-4] adding a new shoe brand nike
+2020-02-29 13:51:45,601 INFO com.shoe.service.ShoeService [http-nio-8080-exec-4] New shoe brand added succesfully. brandName:nike
+2020-02-29 13:55:03,823 INFO com.shoe.ShoeServiceApplication [main] Starting ShoeServiceApplication on DESKTOP-8BEIF3B with PID 10432 (D:\Software\SpringWorkspace\shoe-service\target\classes started by tarun in D:\Software\SpringWorkspace\shoe-service)
+2020-02-29 13:55:03,825 DEBUG com.shoe.ShoeServiceApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-29 13:55:03,826 INFO com.shoe.ShoeServiceApplication [main] The following profiles are active: prd
+2020-02-29 13:55:08,737 INFO com.shoe.ShoeServiceApplication [main] Started ShoeServiceApplication in 5.209 seconds (JVM running for 6.29)
+2020-02-29 13:55:18,878 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-2] adding a new shoe brand nike
+2020-02-29 13:55:19,004 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] ERROR: relation "hibernate_sequence" does not exist
+  Position: 17
+2020-02-29 13:58:36,075 INFO com.shoe.ShoeServiceApplication [main] Starting ShoeServiceApplication on DESKTOP-8BEIF3B with PID 7172 (D:\Software\SpringWorkspace\shoe-service\target\classes started by tarun in D:\Software\SpringWorkspace\shoe-service)
+2020-02-29 13:58:36,076 DEBUG com.shoe.ShoeServiceApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-29 13:58:36,076 INFO com.shoe.ShoeServiceApplication [main] The following profiles are active: prd
+2020-02-29 13:58:40,731 INFO com.shoe.ShoeServiceApplication [main] Started ShoeServiceApplication in 4.958 seconds (JVM running for 6.001)
+2020-02-29 13:58:42,546 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-1] adding a new shoe brand nike
+2020-02-29 13:58:42,664 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-1] ERROR: relation "hibernate_sequence" does not exist
+  Position: 17
+2020-02-29 13:59:07,582 INFO com.shoe.ShoeServiceApplication [main] Starting ShoeServiceApplication on DESKTOP-8BEIF3B with PID 12460 (D:\Software\SpringWorkspace\shoe-service\target\classes started by tarun in D:\Software\SpringWorkspace\shoe-service)
+2020-02-29 13:59:07,585 DEBUG com.shoe.ShoeServiceApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-29 13:59:07,585 INFO com.shoe.ShoeServiceApplication [main] The following profiles are active: prd
+2020-02-29 13:59:12,468 INFO com.shoe.ShoeServiceApplication [main] Started ShoeServiceApplication in 5.192 seconds (JVM running for 6.277)
+2020-02-29 13:59:13,649 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-1] adding a new shoe brand nike
+2020-02-29 13:59:13,788 INFO com.shoe.service.ShoeService [http-nio-8080-exec-1] New shoe brand added succesfully. brandName:nike
+2020-02-29 13:59:16,246 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-3] adding a new shoe brand nike
+2020-02-29 13:59:16,251 INFO com.shoe.service.ShoeService [http-nio-8080-exec-3] New shoe brand added succesfully. brandName:nike
+2020-02-29 13:59:17,108 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-4] adding a new shoe brand nike
+2020-02-29 13:59:17,112 INFO com.shoe.service.ShoeService [http-nio-8080-exec-4] New shoe brand added succesfully. brandName:nike
+2020-02-29 13:59:18,171 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-5] adding a new shoe brand nike
+2020-02-29 13:59:18,175 INFO com.shoe.service.ShoeService [http-nio-8080-exec-5] New shoe brand added succesfully. brandName:nike
+2020-02-29 13:59:18,378 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-6] adding a new shoe brand nike
+2020-02-29 13:59:18,382 INFO com.shoe.service.ShoeService [http-nio-8080-exec-6] New shoe brand added succesfully. brandName:nike
+2020-02-29 13:59:18,712 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-7] adding a new shoe brand nike
+2020-02-29 13:59:18,716 INFO com.shoe.service.ShoeService [http-nio-8080-exec-7] New shoe brand added succesfully. brandName:nike
+2020-02-29 14:04:27,595 INFO com.shoe.ShoeServiceApplication [main] Starting ShoeServiceApplication on DESKTOP-8BEIF3B with PID 1020 (D:\Software\SpringWorkspace\shoe-service\target\classes started by tarun in D:\Software\SpringWorkspace\shoe-service)
+2020-02-29 14:04:27,598 DEBUG com.shoe.ShoeServiceApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-29 14:04:27,598 INFO com.shoe.ShoeServiceApplication [main] The following profiles are active: prd
+2020-02-29 14:04:32,222 INFO com.shoe.ShoeServiceApplication [main] Started ShoeServiceApplication in 4.942 seconds (JVM running for 6.047)
+2020-02-29 14:05:03,361 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-9] adding a new shoe brand nike
+2020-02-29 14:05:03,505 INFO com.shoe.service.ShoeService [http-nio-8080-exec-9] New shoe brand added succesfully. brandName:nike
+2020-02-29 14:05:09,828 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-10] adding a new shoe brand nike
+2020-02-29 14:05:09,832 INFO com.shoe.service.ShoeService [http-nio-8080-exec-10] New shoe brand added succesfully. brandName:nike
+2020-02-29 14:05:16,491 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-1] adding a new shoe brand nike
+2020-02-29 14:05:16,495 INFO com.shoe.service.ShoeService [http-nio-8080-exec-1] New shoe brand added succesfully. brandName:nike
+2020-02-29 14:07:21,633 INFO com.shoe.ShoeServiceApplication [main] Starting ShoeServiceApplication on DESKTOP-8BEIF3B with PID 13868 (D:\Software\SpringWorkspace\shoe-service\target\classes started by tarun in D:\Software\SpringWorkspace\shoe-service)
+2020-02-29 14:07:21,636 DEBUG com.shoe.ShoeServiceApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-29 14:07:21,636 INFO com.shoe.ShoeServiceApplication [main] The following profiles are active: prd
+2020-02-29 14:07:26,240 INFO com.shoe.ShoeServiceApplication [main] Started ShoeServiceApplication in 4.915 seconds (JVM running for 5.939)
+2020-02-29 14:07:45,023 INFO com.shoe.ShoeServiceApplication [main] Starting ShoeServiceApplication on DESKTOP-8BEIF3B with PID 22992 (D:\Software\SpringWorkspace\shoe-service\target\classes started by tarun in D:\Software\SpringWorkspace\shoe-service)
+2020-02-29 14:07:45,026 DEBUG com.shoe.ShoeServiceApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-29 14:07:45,026 INFO com.shoe.ShoeServiceApplication [main] The following profiles are active: prd
+2020-02-29 14:07:49,723 INFO com.shoe.ShoeServiceApplication [main] Started ShoeServiceApplication in 4.989 seconds (JVM running for 6.184)
+2020-02-29 14:08:04,317 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-2] adding a new shoe brand nike
+2020-02-29 14:08:04,456 INFO com.shoe.service.ShoeService [http-nio-8080-exec-2] New shoe brand added succesfully. brandName:nike
+2020-02-29 14:08:06,917 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-3] adding a new shoe brand nike
+2020-02-29 14:08:06,922 INFO com.shoe.service.ShoeService [http-nio-8080-exec-3] New shoe brand added succesfully. brandName:nike
+2020-02-29 14:08:08,001 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-4] adding a new shoe brand nike
+2020-02-29 14:08:08,004 INFO com.shoe.service.ShoeService [http-nio-8080-exec-4] New shoe brand added succesfully. brandName:nike
+2020-02-29 14:08:09,288 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-6] adding a new shoe brand nike
+2020-02-29 14:08:09,292 INFO com.shoe.service.ShoeService [http-nio-8080-exec-6] New shoe brand added succesfully. brandName:nike
+2020-02-29 14:08:10,558 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-5] adding a new shoe brand nike
+2020-02-29 14:08:10,561 INFO com.shoe.service.ShoeService [http-nio-8080-exec-5] New shoe brand added succesfully. brandName:nike
+2020-02-29 14:08:11,662 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-7] adding a new shoe brand nike
+2020-02-29 14:08:11,666 INFO com.shoe.service.ShoeService [http-nio-8080-exec-7] New shoe brand added succesfully. brandName:nike
+2020-02-29 14:08:13,290 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-8] adding a new shoe brand nike
+2020-02-29 14:08:13,294 INFO com.shoe.service.ShoeService [http-nio-8080-exec-8] New shoe brand added succesfully. brandName:nike
+2020-02-29 14:28:16,129 INFO com.shoe.ShoeServiceApplication [main] Starting ShoeServiceApplication on DESKTOP-8BEIF3B with PID 4664 (D:\Software\SpringWorkspace\shoe-service\target\classes started by tarun in D:\Software\SpringWorkspace\shoe-service)
+2020-02-29 14:28:16,131 DEBUG com.shoe.ShoeServiceApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-29 14:28:16,131 INFO com.shoe.ShoeServiceApplication [main] The following profiles are active: prd
+2020-02-29 14:28:20,763 INFO com.shoe.ShoeServiceApplication [main] Started ShoeServiceApplication in 4.916 seconds (JVM running for 6.037)
+2020-02-29 14:28:23,291 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-1] adding a new shoe brand nike
+2020-02-29 14:28:23,429 INFO com.shoe.service.ShoeService [http-nio-8080-exec-1] New shoe brand added succesfully. brandName:nike
+2020-02-29 14:28:25,317 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-3] adding a new shoe brand nike
+2020-02-29 14:28:25,320 INFO com.shoe.service.ShoeService [http-nio-8080-exec-3] New shoe brand added succesfully. brandName:nike
+2020-02-29 14:28:26,194 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-4] adding a new shoe brand nike
+2020-02-29 14:28:26,197 INFO com.shoe.service.ShoeService [http-nio-8080-exec-4] New shoe brand added succesfully. brandName:nike
+2020-02-29 14:32:35,866 INFO com.shoe.ShoeServiceApplication [main] Starting ShoeServiceApplication on DESKTOP-8BEIF3B with PID 8244 (D:\Software\SpringWorkspace\shoe-service\target\classes started by tarun in D:\Software\SpringWorkspace\shoe-service)
+2020-02-29 14:32:35,868 DEBUG com.shoe.ShoeServiceApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-29 14:32:35,869 INFO com.shoe.ShoeServiceApplication [main] The following profiles are active: prd
+2020-02-29 14:32:40,532 INFO com.shoe.ShoeServiceApplication [main] Started ShoeServiceApplication in 4.99 seconds (JVM running for 6.153)
+2020-02-29 14:32:42,536 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-1] adding a new shoe brand nike
+2020-02-29 14:32:42,685 INFO com.shoe.service.ShoeService [http-nio-8080-exec-1] New shoe brand added succesfully. brandName:nike
+2020-02-29 14:34:45,042 INFO com.shoe.ShoeServiceApplication [main] Starting ShoeServiceApplication on DESKTOP-8BEIF3B with PID 22936 (D:\Software\SpringWorkspace\shoe-service\target\classes started by tarun in D:\Software\SpringWorkspace\shoe-service)
+2020-02-29 14:34:45,045 DEBUG com.shoe.ShoeServiceApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-29 14:34:45,046 INFO com.shoe.ShoeServiceApplication [main] The following profiles are active: prd
+2020-02-29 14:34:49,912 INFO com.shoe.ShoeServiceApplication [main] Started ShoeServiceApplication in 5.162 seconds (JVM running for 6.262)
+2020-02-29 14:35:08,124 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-1] adding a new shoe brand adidas
+2020-02-29 14:35:08,265 INFO com.shoe.service.ShoeService [http-nio-8080-exec-1] New shoe brand added succesfully. brandName:adidas
+2020-02-29 14:35:53,741 INFO com.shoe.service.ShoeService [http-nio-8080-exec-9] In method get Available brands.
+2020-02-29 14:35:53,765 INFO com.shoe.service.ShoeService [http-nio-8080-exec-9] ShoeBrands: [ShoeBrand [shoeId=1, shoeBrandName=nike], ShoeBrand [shoeId=2, shoeBrandName=adidas]]
+2020-02-29 14:36:10,431 INFO com.shoe.service.ShoeService [http-nio-8080-exec-1] In method get Available brands.
+2020-02-29 14:36:10,434 INFO com.shoe.service.ShoeService [http-nio-8080-exec-1] ShoeBrands: [ShoeBrand [shoeId=1, shoeBrandName=nike], ShoeBrand [shoeId=2, shoeBrandName=adidas]]
+2020-02-29 14:36:54,232 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-4] Add new true size 3 for ShoeBrand: 1 ShoeSize: 8 
+2020-02-29 14:36:54,234 DEBUG com.shoe.service.ShoeService [http-nio-8080-exec-4] Getting shoeId for Brand:1
+2020-02-29 14:36:54,236 ERROR com.shoe.service.ShoeService [http-nio-8080-exec-4] The requested shoe brand doesnt exists.
+2020-02-29 14:37:06,882 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-5] Add new true size 3 for ShoeBrand: nike ShoeSize: 8 
+2020-02-29 14:37:06,883 DEBUG com.shoe.service.ShoeService [http-nio-8080-exec-5] Getting shoeId for Brand:nike
+2020-02-29 14:37:06,885 INFO com.shoe.service.ShoeService [http-nio-8080-exec-5] Inserting records for 1 in the trueSizetable
+2020-02-29 14:37:06,886 DEBUG com.shoe.service.ShoeService [http-nio-8080-exec-5] trueSizeDetails:ShoeTrueSizeDetails [id=null, shoeBrandId=1, shoeSize=8, trueSize=3]
+2020-02-29 14:37:06,898 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-5] ERROR: relation "hibernate_sequence" does not exist
+  Position: 17
+2020-02-29 14:39:13,068 INFO com.shoe.ShoeServiceApplication [main] Starting ShoeServiceApplication on DESKTOP-8BEIF3B with PID 19128 (D:\Software\SpringWorkspace\shoe-service\target\classes started by tarun in D:\Software\SpringWorkspace\shoe-service)
+2020-02-29 14:39:13,071 DEBUG com.shoe.ShoeServiceApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-29 14:39:13,071 INFO com.shoe.ShoeServiceApplication [main] The following profiles are active: prd
+2020-02-29 14:39:17,467 INFO com.shoe.ShoeServiceApplication [main] Started ShoeServiceApplication in 4.681 seconds (JVM running for 5.749)
+2020-02-29 14:39:26,151 INFO com.shoe.service.ShoeService [http-nio-8080-exec-2] In method get Available brands.
+2020-02-29 14:39:26,254 INFO com.shoe.service.ShoeService [http-nio-8080-exec-2] ShoeBrands: [ShoeBrand [shoeId=1, shoeBrandName=nike], ShoeBrand [shoeId=2, shoeBrandName=adidas]]
+2020-02-29 14:39:29,735 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-5] adding a new shoe brand adidas
+2020-02-29 14:39:35,689 INFO com.shoe.service.ShoeService [http-nio-8080-exec-9] In method get Available brands.
+2020-02-29 14:39:35,691 INFO com.shoe.service.ShoeService [http-nio-8080-exec-9] ShoeBrands: [ShoeBrand [shoeId=1, shoeBrandName=nike], ShoeBrand [shoeId=2, shoeBrandName=adidas]]
+2020-02-29 14:39:41,918 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-7] Add new true size 3 for ShoeBrand: nike ShoeSize: 8 
+2020-02-29 14:39:41,920 DEBUG com.shoe.service.ShoeService [http-nio-8080-exec-7] Getting shoeId for Brand:nike
+2020-02-29 14:39:41,922 INFO com.shoe.service.ShoeService [http-nio-8080-exec-7] Inserting records for Brand nike in the trueSizetable
+2020-02-29 14:39:41,923 DEBUG com.shoe.service.ShoeService [http-nio-8080-exec-7] trueSizeDetails:ShoeTrueSizeDetails [id=null, shoeBrandId=1, shoeSize=8, trueSize=3]
+2020-02-29 14:39:41,954 INFO com.shoe.service.ShoeService [http-nio-8080-exec-7] Record inserted successfully in the table
+2020-02-29 14:39:43,028 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-7] ERROR: numeric field overflow
+  Detail: A field with precision 5, scale 5 must round to an absolute value less than 1.
+2020-02-29 14:46:05,305 INFO com.shoe.ShoeServiceApplication [main] Starting ShoeServiceApplication on DESKTOP-8BEIF3B with PID 18092 (D:\Software\SpringWorkspace\shoe-service\target\classes started by tarun in D:\Software\SpringWorkspace\shoe-service)
+2020-02-29 14:46:05,308 DEBUG com.shoe.ShoeServiceApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-29 14:46:05,308 INFO com.shoe.ShoeServiceApplication [main] The following profiles are active: prd
+2020-02-29 14:46:09,903 INFO com.shoe.ShoeServiceApplication [main] Started ShoeServiceApplication in 4.936 seconds (JVM running for 5.926)
+2020-02-29 14:46:24,473 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-2] Add new true size 3 for ShoeBrand: nike ShoeSize: 8 
+2020-02-29 14:46:24,484 DEBUG com.shoe.service.ShoeService [http-nio-8080-exec-2] Getting shoeId for Brand:nike
+2020-02-29 14:46:24,598 INFO com.shoe.service.ShoeService [http-nio-8080-exec-2] Inserting records for Brand nike in the trueSizetable
+2020-02-29 14:46:24,598 DEBUG com.shoe.service.ShoeService [http-nio-8080-exec-2] trueSizeDetails:ShoeTrueSizeDetails [id=null, shoeBrandId=1, shoeSize=8, trueSize=3]
+2020-02-29 14:46:24,630 INFO com.shoe.service.ShoeService [http-nio-8080-exec-2] Record inserted successfully in the True Size table 
+2020-02-29 14:46:24,644 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] ERROR: numeric field overflow
+  Detail: A field with precision 5, scale 5 must round to an absolute value less than 1.
+2020-02-29 14:54:39,374 INFO com.shoe.ShoeServiceApplication [main] Starting ShoeServiceApplication on DESKTOP-8BEIF3B with PID 22712 (D:\Software\SpringWorkspace\shoe-service\target\classes started by tarun in D:\Software\SpringWorkspace\shoe-service)
+2020-02-29 14:54:39,378 DEBUG com.shoe.ShoeServiceApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-29 14:54:39,378 INFO com.shoe.ShoeServiceApplication [main] The following profiles are active: prd
+2020-02-29 14:54:43,905 INFO com.shoe.ShoeServiceApplication [main] Started ShoeServiceApplication in 4.818 seconds (JVM running for 5.887)
+2020-02-29 14:54:48,120 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-2] Add new true size 3 for ShoeBrand: nike ShoeSize: 8 
+2020-02-29 14:54:48,132 DEBUG com.shoe.service.ShoeService [http-nio-8080-exec-2] Getting shoeId for Brand:nike
+2020-02-29 14:54:48,283 INFO com.shoe.service.ShoeService [http-nio-8080-exec-2] Inserting records for Brand nike in the trueSizetable
+2020-02-29 14:54:48,283 DEBUG com.shoe.service.ShoeService [http-nio-8080-exec-2] trueSizeDetails:ShoeTrueSizeDetails [id=null, shoeBrandId=1, shoeSize=8, trueSize=3]
+2020-02-29 14:54:48,319 INFO com.shoe.service.ShoeService [http-nio-8080-exec-2] Record inserted successfully in the True Size table 
+2020-02-29 14:59:45,754 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-4] Add new true size 2 for ShoeBrand: nike ShoeSize: 8 
+2020-02-29 14:59:45,756 DEBUG com.shoe.service.ShoeService [http-nio-8080-exec-4] Getting shoeId for Brand:nike
+2020-02-29 14:59:45,757 INFO com.shoe.service.ShoeService [http-nio-8080-exec-4] Inserting records for Brand nike in the trueSizetable
+2020-02-29 14:59:45,758 DEBUG com.shoe.service.ShoeService [http-nio-8080-exec-4] trueSizeDetails:ShoeTrueSizeDetails [id=null, shoeBrandId=1, shoeSize=8, trueSize=2]
+2020-02-29 14:59:45,760 INFO com.shoe.service.ShoeService [http-nio-8080-exec-4] Record inserted successfully in the True Size table 
+2020-02-29 14:59:45,762 DEBUG com.shoe.service.ShoeService [http-nio-8080-exec-4] ShoeDetails:ShoeDetails [Id=1, shoeSubCatId=1, shoeBrandId=1, shoeSize=8, trueSizeAvg=3.0, trueSizeCount=1]
+2020-02-29 14:59:45,932 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-4] ERROR: column "sd" of relation "shoe_details" does not exist
+  Position: 28
+2020-02-29 15:01:22,682 INFO com.shoe.ShoeServiceApplication [main] Starting ShoeServiceApplication on DESKTOP-8BEIF3B with PID 21692 (D:\Software\SpringWorkspace\shoe-service\target\classes started by tarun in D:\Software\SpringWorkspace\shoe-service)
+2020-02-29 15:01:22,684 DEBUG com.shoe.ShoeServiceApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-29 15:01:22,684 INFO com.shoe.ShoeServiceApplication [main] The following profiles are active: prd
+2020-02-29 15:01:27,079 INFO com.shoe.ShoeServiceApplication [main] Started ShoeServiceApplication in 4.677 seconds (JVM running for 5.686)
+2020-02-29 15:01:52,004 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-2] Add new true size 2 for ShoeBrand: nike ShoeSize: 8 
+2020-02-29 15:01:52,015 DEBUG com.shoe.service.ShoeService [http-nio-8080-exec-2] Getting shoeId for Brand:nike
+2020-02-29 15:01:52,119 INFO com.shoe.service.ShoeService [http-nio-8080-exec-2] Inserting records for Brand nike in the trueSizetable
+2020-02-29 15:01:52,120 DEBUG com.shoe.service.ShoeService [http-nio-8080-exec-2] trueSizeDetails:ShoeTrueSizeDetails [id=null, shoeBrandId=1, shoeSize=8, trueSize=2]
+2020-02-29 15:01:52,148 INFO com.shoe.service.ShoeService [http-nio-8080-exec-2] Record inserted successfully in the True Size table 
+2020-02-29 15:01:52,153 DEBUG com.shoe.service.ShoeService [http-nio-8080-exec-2] ShoeDetails:ShoeDetails [Id=1, shoeSubCatId=1, shoeBrandId=1, shoeSize=8, trueSizeAvg=3.0, trueSizeCount=1]
+2020-02-29 15:01:52,181 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] ERROR: column "sd" of relation "shoe_details" does not exist
+  Position: 28
+2020-02-29 15:05:00,646 INFO com.shoe.ShoeServiceApplication [main] Starting ShoeServiceApplication on DESKTOP-8BEIF3B with PID 22776 (D:\Software\SpringWorkspace\shoe-service\target\classes started by tarun in D:\Software\SpringWorkspace\shoe-service)
+2020-02-29 15:05:00,649 DEBUG com.shoe.ShoeServiceApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-29 15:05:00,649 INFO com.shoe.ShoeServiceApplication [main] The following profiles are active: prd
+2020-02-29 15:05:04,970 INFO com.shoe.ShoeServiceApplication [main] Started ShoeServiceApplication in 4.619 seconds (JVM running for 5.642)
+2020-02-29 15:05:10,256 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-2] Add new true size 2 for ShoeBrand: nike ShoeSize: 8 
+2020-02-29 15:05:10,266 DEBUG com.shoe.service.ShoeService [http-nio-8080-exec-2] Getting shoeId for Brand:nike
+2020-02-29 15:05:10,370 INFO com.shoe.service.ShoeService [http-nio-8080-exec-2] Inserting records for Brand nike in the trueSizetable
+2020-02-29 15:05:10,370 DEBUG com.shoe.service.ShoeService [http-nio-8080-exec-2] trueSizeDetails:ShoeTrueSizeDetails [id=null, shoeBrandId=1, shoeSize=8, trueSize=2]
+2020-02-29 15:05:10,397 INFO com.shoe.service.ShoeService [http-nio-8080-exec-2] Record inserted successfully in the True Size table 
+2020-02-29 15:05:10,401 DEBUG com.shoe.service.ShoeService [http-nio-8080-exec-2] ShoeDetails:ShoeDetails [Id=1, shoeSubCatId=1, shoeBrandId=1, shoeSize=8, trueSizeAvg=3.0, trueSizeCount=1]
+2020-02-29 15:05:10,425 DEBUG com.shoe.service.ShoeService [http-nio-8080-exec-2] Updated avg in the shoedetails table. new Avg is 2.5
+2020-02-29 15:07:19,056 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-5] Add new true size 1 for ShoeBrand: nike ShoeSize: 8 
+2020-02-29 15:07:19,058 DEBUG com.shoe.service.ShoeService [http-nio-8080-exec-5] Getting shoeId for Brand:nike
+2020-02-29 15:07:19,059 INFO com.shoe.service.ShoeService [http-nio-8080-exec-5] Inserting records for Brand nike in the trueSizetable
+2020-02-29 15:07:19,060 DEBUG com.shoe.service.ShoeService [http-nio-8080-exec-5] trueSizeDetails:ShoeTrueSizeDetails [id=null, shoeBrandId=1, shoeSize=8, trueSize=1]
+2020-02-29 15:07:19,062 INFO com.shoe.service.ShoeService [http-nio-8080-exec-5] Record inserted successfully in the True Size table 
+2020-02-29 15:07:19,063 DEBUG com.shoe.service.ShoeService [http-nio-8080-exec-5] ShoeDetails:ShoeDetails [Id=1, shoeSubCatId=1, shoeBrandId=1, shoeSize=8, trueSizeAvg=2.5, trueSizeCount=2]
+2020-02-29 15:07:19,065 DEBUG com.shoe.service.ShoeService [http-nio-8080-exec-5] Updated avg in the shoedetails table. new Avg is 2.0
+2020-02-29 21:45:20,639 INFO com.shoe.ShoeServiceApplication [main] Starting ShoeServiceApplication on DESKTOP-8BEIF3B with PID 11876 (D:\Software\SpringWorkspace\shoe-service\target\classes started by tarun in D:\Software\SpringWorkspace\shoe-service)
+2020-02-29 21:45:20,643 DEBUG com.shoe.ShoeServiceApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-29 21:45:20,644 INFO com.shoe.ShoeServiceApplication [main] The following profiles are active: prd
+2020-02-29 21:45:25,922 INFO com.shoe.ShoeServiceApplication [main] Started ShoeServiceApplication in 5.725 seconds (JVM running for 6.872)
+2020-02-29 23:13:13,187 INFO com.shoe.controller.ShoeController [http-nio-8080-exec-10] adding a new shoe brand adidas
+2020-02-29 23:13:13,489 INFO com.shoe.service.ShoeService [http-nio-8080-exec-10] New shoe brand added succesfully. brandName:adidas
+2020-02-29 23:19:39,989 INFO com.shoe.service.ShoeService [http-nio-8080-exec-6] In method get Available brands.
+2020-02-29 23:19:40,020 INFO com.shoe.service.ShoeService [http-nio-8080-exec-6] ShoeBrands: [ShoeBrand [shoeId=1, shoeBrandName=adidas]]

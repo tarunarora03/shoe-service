@@ -7,6 +7,7 @@ import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
+import springfox.documentation.service.Contact;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
@@ -22,7 +23,11 @@ public class AppConfig {
 	}
 
 	private ApiInfo apiEndPointsInfo() {
-		return new ApiInfoBuilder().title("Spring Boot based Shoe service").description("Shoe").version("1.0.0")
+		return new ApiInfoBuilder().title("Spring Boot based Shoe service")
+				.description("Shoe Management REST API")
+				.contact(new Contact("Tarun Arora", "", "tarunarora03@gmail.com"))
+				.license("Apache 2.0")
+				.version("1.0.0")
 				.build();
 	}
 }

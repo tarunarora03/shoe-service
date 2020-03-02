@@ -33,25 +33,25 @@ public class ShoeService {
 	private ShoeDetailsRepository shoeDetailsRepository;
 
 	// Add new Shoe Brands
-	public ShoeResponse addShoeBrand(ShoeDto dto) {
+	public ShoeResponse addShoeBrand(String brandName) {
 		
 		// check if shoe by this name exists or not
-		ShoeBrand brand2 =shoeBrandRepository.findByShoeBrandName(dto.getShoeBrandName());
+		ShoeBrand brand2 =shoeBrandRepository.findByShoeBrandName(brandName);
 		if(brand2 !=null) {
-			throw new IllegalArgumentException("Brand already exists. Please enter a different brand name. BrandName:" +dto.getShoeBrandName());
+			throw new IllegalArgumentException("Brand already exists. Please enter a different brand name. BrandName:" +brandName);
 		}
 
 		ShoeBrand brand = new ShoeBrand();
-		brand.setShoeBrandName(dto.getShoeBrandName());
+		brand.setShoeBrandName(brandName);
 		
 
 		int brandId = shoeBrandRepository.saveAndFlush(brand).getId();
 		ShoeResponse resp = new ShoeResponse();
 		resp.setBrandId(brandId);
-		resp.setBrandName(dto.getShoeBrandName());
+		resp.setBrandName(brandName);
 		resp.setStatus("New Brand Record added successfully." + brandId);
 
-		logger.info("New shoe brand added succesfully. brandName:{}", dto.getShoeBrandName());
+		logger.info("New shoe brand added succesfully. brandName:{}", brandName);
 		return resp;
 	}
 

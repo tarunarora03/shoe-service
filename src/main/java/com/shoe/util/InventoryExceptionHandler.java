@@ -12,21 +12,30 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
+@EnableWebMvc
 @ControllerAdvice
 public class InventoryExceptionHandler extends ResponseEntityExceptionHandler {
 
-	@ExceptionHandler(Exception.class)
-	public final ResponseEntity<Object> handleAllExceptions(Exception ex, WebRequest request) {
-		ErrorResponse error = new ErrorResponse(HttpStatus.INTERNAL_SERVER_ERROR.value(), ex.getLocalizedMessage());
-		return new ResponseEntity<>(error, HttpStatus.INTERNAL_SERVER_ERROR);
-	}
 
 	@ExceptionHandler(RecordNotFoundException.class)
 	public final ResponseEntity<Object> handleNotFoundException(RecordNotFoundException ex, WebRequest request) {
 		ErrorResponse error = new ErrorResponse(HttpStatus.NOT_FOUND.value(), ex.getLocalizedMessage());
 		return new ResponseEntity<>(error, HttpStatus.NOT_FOUND);
+	}
+
+	@ExceptionHandler(value = { IllegalArgumentException.class, IllegalStateException.class })
+	public final ResponseEntity<Object> handleIllegalStateException(IllegalArgumentException ex, WebRequest request) {
+		ErrorResponse error = new ErrorResponse(HttpStatus.BAD_REQUEST.value(), ex.getLocalizedMessage());
+		return new ResponseEntity<>(error, HttpStatus.BAD_REQUEST);
+	}
+
+	@ExceptionHandler(Exception.class)
+	public final ResponseEntity<Object> handleAllExceptions(Exception ex, WebRequest request) {
+		ErrorResponse error = new ErrorResponse(HttpStatus.INTERNAL_SERVER_ERROR.value(), ex.getLocalizedMessage());
+		return new ResponseEntity<>(error, HttpStatus.INTERNAL_SERVER_ERROR);
 	}
 
 	@Override
