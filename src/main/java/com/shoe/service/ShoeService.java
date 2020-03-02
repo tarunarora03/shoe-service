@@ -122,8 +122,6 @@ public class ShoeService {
 			details.setTrueSizeAvg(trueSize);
 			details.setTrueSizeCount(1);
 			
-			System.out.println("sssssssssssss"+ details.getTrueSizeAvg());
-
 			shoeDetailsRepository.save(details);
 		}
 		resp.setStatus("Record added succesfully and avg were updated.");
