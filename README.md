@@ -23,6 +23,10 @@
 * Navigate to url `http://localhost:8088/shoe/allBrands` and you should see following results 
 
 `[{"brandId":1,"brandName":"adidas"},{"brandId":2,"brandName":"nike"}`
+## API documentation
+Please refer the following url once application is running for documentation
+
+[http://localhost:8080/swagger-ui.html#/](http://localhost:8080/swagger-ui.html#/)
 
 ## Usage
 The service provide following operations.
