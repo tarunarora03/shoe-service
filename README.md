@@ -4,7 +4,11 @@
 ## Build
 
 ### 1. Build the app and Docker file:
-* Clone this repository or down the code.
+* Clone this repository or download the code.
+* Run the maven command to create the jar file(You will need to have java installed in your machine for this. Maven is not required to be installed as maven wrapper is provided)
+```
+./mvnw clean install -Dactive_profile=prd 
+```
 * Run the following command to create a docker image.
 
 `sudo docker build -t app .`
