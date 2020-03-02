@@ -19,7 +19,7 @@ public class ShoeServiceTest {
 	@Test
 	public void testAddBrands() {
 		//ShoeDto dto = addShoeBrandData("nike");
-		String brandName = "nike";
+		String brandName = "asics";
 		service.addShoeBrand(brandName);
 
 		// Fetch the brand
@@ -31,7 +31,7 @@ public class ShoeServiceTest {
 	@Test
 	public void testGetAvg() {
 		//1.0 Register brand
-		String brandName = "adidas";
+		String brandName = "reebok";
 		
 		service.addShoeBrand(brandName);
 		
